@@ -1,0 +1,13 @@
+.main_wrap {
+  width: 50%;
+  margin: 150px auto;
+  transition: all 300ms linear;
+}
+
+@media screen and (max-width: 600px) {
+  .main_wrap {
+    width: 95%;
+    margin: 20px auto;
+    transition: all 300ms linear;
+  }
+}

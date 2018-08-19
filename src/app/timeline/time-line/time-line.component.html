@@ -1,0 +1,20 @@
+<section class="tl_title">
+  <img [src]="hostHead.img" width="80" height="80" class='tl_hosthead' [ngClass]="{'tl_hosthead_reverse': style.reverse}" (click)='style.reverse = !style.reverse'
+    [alt]='hostHead.alt' [title]='hostHead.alt' />
+  <article class="tl_title_content">
+    <h1>{{hostHead.name}}</h1>
+    <span>{{hostHead.sub}}</span>
+  </article>
+</section>
+<ul class="tl_wrap" [ngStyle]="style.wrap" [ngClass]="{'tl_wrap_reverse': style.reverse}">
+  <li *ngFor="let item of data; let i=index" [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
+    <div class="tl_item_date">{{item.date}}</div>
+    <section class="tl_item_content" [ngStyle]="style.node" (click)="item.click(item)">
+      <img [src]="item.img" width="80" height="80" />
+      <article>
+        <header>{{item.title}}</header>
+        <section class="tl_item_content_text">{{item.textContent}}</section>
+      </article>
+    </section>
+  </li>
+</ul>
