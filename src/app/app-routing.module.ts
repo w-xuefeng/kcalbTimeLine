@@ -5,11 +5,11 @@ import { MianComponent } from './mian/mian.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/main',
+    redirectTo: '/timeline',
     pathMatch: 'full'
   },
   {
-    path: 'main',
+    path: 'timeline',
     component: MianComponent
   }
 ];
