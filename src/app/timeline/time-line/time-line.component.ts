@@ -52,7 +52,7 @@ export class TimeLineComponent implements OnInit {
     return x < 10 && x > 0 ? `0${x}` : x;
   }
   go(e) {
-    if(e.trim().length > 0){
+    if (e.trim().length > 0) {
       window.open(e);
     }
   }
