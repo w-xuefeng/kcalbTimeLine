@@ -15,12 +15,12 @@ export class MianComponent extends MainProps implements OnInit {
   }
   getData() {
     this.mainService.getHead().subscribe(rs => {
-      if(rs.status){
+      if (rs.status) {
         this.data = rs.data;
       } else {
         console.log(rs);
       }
       this.data.push(this.lastData);
-    })
+    });
   }
 }

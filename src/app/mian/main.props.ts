@@ -1,4 +1,3 @@
-import { Input, Output, EventEmitter } from '@angular/core';
 export class MainProps {
     public style: any = {
         wrap: {},
@@ -24,7 +23,7 @@ export class MainProps {
         textContent: '未来...',
         img: 'https://pub.wangxuefeng.com.cn/asset/img/bg35.jpg',
         click: ''
-    }
+    };
     getDate() {
         const now = new Date();
         return `${now.getFullYear()}-${this.addZero(now.getMonth() + 1)}-${this.addZero(now.getDate())}`;
