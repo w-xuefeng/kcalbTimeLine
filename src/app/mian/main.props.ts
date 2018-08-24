@@ -15,7 +15,14 @@ export class MainProps {
         name: 'XueF°',
         sub: '记录kcalb的每一次改变'
     };
-    public data: any = [];
+    public data: any = [{
+        id: `${this.getDate()}-${Math.ceil(Math.random() * 10000)}`,
+        date: this.getDate(),
+        title: '疯狂加载中...',
+        textContent: '请耐心等待...',
+        img: 'https://pub.wangxuefeng.com.cn/asset/img/bg6.jpg',
+        click: ''
+    }];
     lastData = {
         id: `${this.getDate()}-${Math.ceil(Math.random() * 10000)}`,
         date: this.getDate(),
