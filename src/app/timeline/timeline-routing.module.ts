@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TimeLineComponent } from './time-line/time-line.component';
 
 const routes: Routes = [
-  { path: 'timeline', component: TimeLineComponent  }
+  { path: 'timeline_component', component: TimeLineComponent  }
 ];
 
 @NgModule({

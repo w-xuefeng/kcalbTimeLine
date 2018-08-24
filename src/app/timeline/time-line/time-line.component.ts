@@ -29,10 +29,8 @@ export class TimeLineComponent implements OnInit {
       date: this.getDate(),
       title: 'kcalb',
       textContent: 'Hello world',
-      img: 'https://kcalb.wang/img/head/kcalb_12.jpg',
-      click(e) {
-        console.log(e);
-      }
+      img: 'https://kcalb.wang/img/head/kcalb_13.jpg',
+      click: ''
     },
     {
       id: 2,
@@ -40,9 +38,7 @@ export class TimeLineComponent implements OnInit {
       title: 'XueFeng',
       textContent: 'Hello world',
       img: 'https://pub.wangxuefeng.com.cn/asset/defaultHead/avatar.png',
-      click(e) {
-        console.log(e);
-      }
+      click: ''
     }
   ];
 
@@ -54,6 +50,11 @@ export class TimeLineComponent implements OnInit {
   }
   addZero(x) {
     return x < 10 && x > 0 ? `0${x}` : x;
+  }
+  go(e) {
+    if(e.trim().length > 0){
+      window.open(e);
+    }
   }
   ngOnInit() {
   }

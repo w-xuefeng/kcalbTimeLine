@@ -1,0 +1,22 @@
+.backtop {
+    position: fixed;
+    bottom: 140px;
+    right: 15%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('/assets/img/backtop.png');
+    background-size: cover;
+    cursor: pointer;
+    transition: all 200ms;   
+}
+
+.hide {
+    height: 0;
+    transition: all 200ms;
+}
+
+.backtop:hover {
+    background-image: url('/assets/img/backtophover.png');
+}
