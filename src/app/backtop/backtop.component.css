@@ -1,22 +1,23 @@
 .backtop {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('/assets/img/backtop.png');
-    background-size: cover;
-    cursor: pointer;
-    transition: all 200ms;   
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.45);
+  transition: all 200ms;
 }
 
 .hide {
-    height: 0;
-    transition: all 200ms;
+  height: 0 !important;
+  transition: all 200ms;
 }
 
 .backtop:hover {
-    background-image: url('/assets/img/backtophover.png');
+  background-color: rgba(0, 0, 0, 0.85);
 }
