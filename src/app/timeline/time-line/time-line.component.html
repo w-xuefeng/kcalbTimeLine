@@ -7,7 +7,7 @@
   </article>
 </section>
 <ul class="tl_wrap" [ngStyle]="style.wrap" [ngClass]="{'tl_wrap_reverse': style.reverse}">
-  <li *ngFor="let item of data; let i=index" [ngStyle]="{'background-image': 'url(' + item.img + ')'}">
+  <li *ngFor="let item of data; let i=index" [ngStyle]="{'background-image': 'url(' + item.img + ')'}" class="tl_item">
     <div class="tl_item_date">{{item.date}}</div>
     <section class="tl_item_content" [ngStyle]="style.node" (click)="go(item.click)">
       <img [src]="item.img" width="80" height="80" />
