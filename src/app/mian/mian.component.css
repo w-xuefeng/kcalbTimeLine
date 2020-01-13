@@ -4,10 +4,34 @@
   transition: all 300ms linear;
 }
 
+.bottom {
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.bottom span {
+  margin-right: 5px;
+}
+
+.bottom a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
   .main_wrap {
     width: 95%;
     margin: 20px auto;
     transition: all 300ms linear;
+  }
+  .bottom {
+    font-size: 12px;
   }
 }

@@ -1,4 +1,5 @@
 export class MainProps {
+    public year = (new Date()).getFullYear();
     public style: any = {
         wrap: {},
         node: {},
